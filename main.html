@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="Home.html">Home</a>|
+    <a href="Contact.html">Contact</a>|
+    <a href="About.html">About</a>|
+    <a href="Project.html">Project</a><br><br><br>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="" id="form1" autocomplete="on">
+        <label for="FirstName">First name:</label><br>
+        <input type="text" name="FirstName" id="FirstName"><br>
+        <label for="SecongName">Second name</label><br>
+        <input type="text" name="SecondName" id="SecondName"><br>
+        <label for="DOB">DOB:</label><br>
+        <input type="date" name="DOB" id="DOB"><br><br><br>
+        <label for="FatherName">Father's name</label><br>
+        <input type="text" name="FatherName" id="FatherName"><br><br> Document: <br>
+        <input type="radio" name="document" id="Adhaar" value="Adhaar">
+        <label for="Adhaar">Adhaar</label><br>
+
+        <input type="radio" name="document" id="Driving-License" value="Driving-License">
+        <label for="Driving-License">Driving-License</label><br>
+        <input type="radio" name="document" id="Other" value="Other">
+        <label for="Other">Other</label><br><br><br>
+
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <label for="des">Description:</label><br>
+        <textarea name="textarea" id="des" cols="100" rows="10" placeholder="describe yourself..."></textarea><br>
+        <input type="checkbox" name="confirm" id="confirm" required>
+        <label for="confirm">Confirm</label><br><br>
+
+    </form>
+    <button type="submit" form="form1">Submit</button>
+</body>
+
+</html>
