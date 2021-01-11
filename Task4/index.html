@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 800px;
+            height: 500px;
+            background-color: darkorange;
+            margin-left: 400px;
+            margin-top: 50px;
+        }
+        
+        .cost1 {
+            width: 800px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        .cost1>div:nth-child(1) {
+            display: inline-block;
+            padding-left: 300px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+        
+        .cost1>div:nth-child(2) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost1>div:nth-child(3) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost1>div:nth-child(4) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost2 {
+            width: 800px;
+            height: 100px;
+            background-color: rgb(126, 126, 180);
+        }
+        
+        .cost2>div:nth-child(1) {
+            display: inline-block;
+            padding-left: 300px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+        
+        .cost2>div:nth-child(2) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost2>div:nth-child(3) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost2>div:nth-child(4) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost3 {
+            width: 800px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+        
+        .cost3>div:nth-child(1) {
+            display: inline-block;
+            padding-left: 300px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+        
+        .cost3>div:nth-child(2) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost3>div:nth-child(3) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost3>div:nth-child(4) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost4 {
+            width: 800px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        .cost4>div:nth-child(1) {
+            display: inline-block;
+            padding-left: 300px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+        
+        .cost4>div:nth-child(2) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost4>div:nth-child(3) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .cost4>div:nth-child(4) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .total {
+            width: 800px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        
+        .total>div:nth-child(1) {
+            display: inline-block;
+            padding-left: 300px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+        
+        .total>div:nth-child(2) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .total>div:nth-child(3) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+        
+        .reset {
+            width: 800px;
+            height: 100px;
+            background-color: rgb(240, 127, 255);
+        }
+        
+        .reset>div:nth-child(1) {
+            display: inline-block;
+            padding-left: 300px;
+            padding-top: 20px;
+            font-size: xx-large;
+        }
+        
+        .reset>div:nth-child(2) {
+            display: inline-block;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: aqua;">
+        <h1 style="text-align: center; color:purple">Bill calculator</h1>
+    </div>
+    <div class="outer">
+        <div class="cost1">
+            <div>Tea </div>
+            <div id="cost1_main_cost">10</div>
+            <div>rupees</div>
+            <div><button class="universal" id="cost1_main" style="background-color: blueviolet; color:white;">AddMe</button></div>
+        </div>
+        <div class="cost2">
+            <div>Coffee </div>
+            <div id="cost2_main_cost">15</div>
+            <div>rupees</div>
+            <div><button class="universal" id="cost2_main" style="background-color: blueviolet; color:white;">AddMe</button></div>
+        </div>
+
+        <div class="cost3">
+            <div>Maggie </div>
+            <div id="cost3_main_cost">30</div>
+            <div>rupees</div>
+            <div><button class="universal" id="cost3_main" style="background-color: blueviolet; color:white;">AddMe</button></div>
+        </div>
+        <div class="cost4">
+            <div>Pasta </div>
+            <div id="cost4_main_cost">50</div>
+            <div>rupees</div>
+            <div><button class="universal" id="cost4_main" style="background-color: blueviolet; color:white;">AddMe</button></div>
+        </div>
+
+        <div class="total">
+            <div>Total = </div>
+            <div id="total_main">0</div>
+            <div>rupees</div>
+        </div>
+        <div class="reset">
+            <div id="reset">Reset</div>
+            <div><button id="click_me" style="background-color: blueviolet; color:white;">Click_Me</button></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
